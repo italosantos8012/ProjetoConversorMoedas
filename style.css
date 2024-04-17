@@ -16,7 +16,7 @@ main {
     max-height: 37rem;
     border-radius: 20px;
     margin: 1.5rem auto;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .logoPrincipal {
@@ -101,4 +101,10 @@ button:active {
     color: #6E6E6E;
     font-size: 0.8rem;
     font-weight: 700;
+}
+
+#footer {
+    padding: 6px 0;
+    text-align: center;
+    font-size: .6rem;
 }
