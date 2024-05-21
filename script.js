@@ -13,13 +13,13 @@ async function convertValues() {
 
     const moedas = "USD-BRL,EUR-BRL,GBP-BRL,BTC-BRL"
     const url = `https://economia.awesomeapi.com.br/last/${moedas}`
-    const data = await fetch(url).then(response => response.json())
+    const data = await fetch(url).then(res => res.json())
 
     let total = 1
-    const dolarToday = data.USDBRL["bid"]
-    const euroToday = data.EURBRL["bid"]
-    const libraToday = data.GBPBRL["bid"]
-    const bitcoinToday = data.BTCBRL["bid"]
+    const dolarToday = data.USDBRL.bid
+    const euroToday = data.EURBRL.bid
+    const libraToday = data.GBPBRL.bid
+    const bitcoinToday = data.BTCBRL.bid
     const real = 1
 
 
